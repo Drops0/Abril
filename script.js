@@ -23,9 +23,9 @@ const CONFIG = {
       contenido: '12 fotos por pack',
       disponibles: 3,
       precio_ars: '$12.000 ARS',
-      precio_usd: '$10 USD',
+      precio_usd: '$9 USD',
       preview: 'img/preview_premium.jpg',
-      paypal_usd: 10,
+      paypal_usd: 9,
     },
     {
       id: 'comun',
@@ -47,9 +47,9 @@ const CONFIG = {
       contenido: '1 video por pack',
       disponibles: 4,
       precio_ars: '$12.000 ARS',
-      precio_usd: '$10 USD',
+      precio_usd: '$9 USD',
       preview: 'img/preview_videos.jpg',
-      paypal_usd: 10,
+      paypal_usd: 9,
     },
     {
       id: 'pies',
@@ -64,16 +64,52 @@ const CONFIG = {
       paypal_usd: 3,
     },
     {
-      id: 'vip',
-      icon: '👑',
-      nombre: 'Grupo VIP',
-      descripcion: 'Acceso exclusivo al grupo privado con todo el contenido subido hasta la fecha',
-      contenido: 'Acceso mensual al grupo VIP',
-      disponibles: 5,
-      precio_ars: '$36.000 ARS',
-      precio_usd: '$30 USD',
-      preview: 'img/preview_vip.jpg',
-      paypal_usd: 30,
+      id: 'bikini',
+      icon: '🩱',
+      nombre: 'Pack Bikini',
+      descripcion: 'Fotos exclusivas en bikini y ropa interior',
+      contenido: 'Fotos en bikini y lencería',
+      disponibles: 3,
+      precio_ars: '$8.000 ARS',
+      precio_usd: '$6 USD',
+      preview: 'img/preview_bikini.jpg',
+      paypal_usd: 6,
+    },
+    {
+      id: 'sexting',
+      icon: '💬',
+      nombre: 'Sexting',
+      descripcion: 'Charla hot por video de 10 minutos',
+      contenido: '1 videollamada de 10 min',
+      disponibles: 3,
+      precio_ars: '$2.000 ARS',
+      precio_usd: '$2 USD',
+      preview: 'img/preview_sexting.jpg',
+      paypal_usd: 2,
+    },
+    {
+      id: 'audios',
+      icon: '🎧',
+      nombre: 'Audios Hot',
+      descripcion: 'Audios personalizados diciendo lo que quieras',
+      contenido: '2 minutos de audios custom',
+      disponibles: 3,
+      precio_ars: '$3.500 ARS',
+      precio_usd: '$3 USD',
+      preview: 'img/preview_audios.jpg',
+      paypal_usd: 3,
+    },
+    {
+      id: 'novia',
+      icon: '💕',
+      nombre: 'Novia Virtual',
+      descripcion: 'Un mes de atención personalizada + todo el contenido',
+      contenido: 'Todo incluido por 1 mes',
+      disponibles: 2,
+      precio_ars: '$450.000 ARS',
+      precio_usd: '$300 USD',
+      preview: 'img/preview_novia.jpg',
+      paypal_usd: 300,
     },
   ],
 };
@@ -83,7 +119,7 @@ const CONFIG = {
    ═══════════════════════════════════════════════ */
 const TESTIMONIOS = [
   { nombre: 'Mati R.', texto: 'Super rápido, me llegó el contenido al toque por Telegram. Todo tal cual lo que prometían.', stars: 5 },
-  { nombre: 'Lucas F.', texto: 'Compré el pack VIP y vale cada centavo. El grupo tiene un montón de contenido y se actualiza seguido.', stars: 5 },
+  { nombre: 'Lucas F.', texto: 'Compré el pack premium y vale cada centavo. Las fotos son increíbles y me llegó todo rapidísimo.', stars: 5 },
   { nombre: 'Franco P.', texto: 'Al principio dudé pero pagué por MP y en 10 minutos ya tenía el link. Recomendado.', stars: 5 },
   { nombre: 'Axel M.', texto: 'Buen contenido, buena onda. Pagué con PayPal desde USA y todo perfecto.', stars: 5 },
 ];
@@ -258,7 +294,7 @@ $('donate-custom-btn').addEventListener('click', () => {
 $('donate-custom-confirm').addEventListener('click', () => {
   const val = Number($('donate-custom-input').value);
   if (val > 0) {
-    donateAmount = { ars: val, usd: Math.round(val / 1000) };
+    donateAmount = { ars: val, usd: Math.ceil(val / 1500) };
     $('donate-custom-wrap').classList.add('hidden');
   }
 });
