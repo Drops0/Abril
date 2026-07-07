@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /
+
+# Drops — sitio privado de contenido exclusivo
+# Para contacto: dropsdrops2005@gmail.com

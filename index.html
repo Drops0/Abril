@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Drops — Contenido digital exclusivo y premium. Acceso seguro a packs seleccionados." />
+  <meta name="author" content="Drops" />
+  <meta name="robots" content="noindex" />
+  <meta property="og:title" content="Drops — Contenido Exclusivo" />
+  <meta property="og:description" content="Plataforma de contenido digital exclusivo. Pago seguro. Acceso inmediato." />
+  <meta property="og:type" content="website" />
+  <title>Drops — Contenido Exclusivo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ═══════════ AGE GATE ═══════════ -->
+  <div id="age-gate">
+    <div class="ag-card">
+      <div class="logo">Drops</div>
+      <div class="ag-divider"></div>
+      <p class="ag-title">Contenido exclusivo para adultos</p>
+      <p class="ag-sub">Debés tener 18 años o más para continuar</p>
+      <div class="ag-actions">
+        <button id="btn-enter" class="btn btn-primary">Tengo 18+ años</button>
+        <a href="https://www.google.com" class="btn btn-ghost">Salir</a>
+      </div>
+    </div>
+    <div class="bg-orbs">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+  </div>
+
+  <!-- ═══════════ SITE ═══════════ -->
+  <div id="site" class="hidden">
+
+    <!-- Header -->
+    <header id="header">
+      <div class="header-inner">
+        <span class="logo">Drops</span>
+        <a id="header-tg" href="#" target="_blank" rel="noopener" class="tg-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248-2.008 9.456c-.15.668-.543.832-1.1.518l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L7.48 14.617l-2.95-.92c-.64-.2-.654-.64.136-.948l11.527-4.444c.535-.194 1.003.13.369 1.943z"/></svg>
+          Telegram
+        </a>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="bg-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+      </div>
+      <div class="hero-content">
+        <div class="hero-badge">❖ Exclusivo</div>
+        <h1>Contenido <em>premium</em><br/>a tu alcance</h1>
+        <p>Elegí tu pack, completá el pago<br/>y recibís acceso al instante</p>
+
+        <!-- Trust badges -->
+        <div class="trust-badges">
+          <div class="trust-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Pago 100% seguro
+          </div>
+          <div class="trust-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Garantía de entrega
+          </div>
+          <div class="trust-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            Datos protegidos
+          </div>
+        </div>
+
+        <!-- Banner de apoyo inline -->
+        <div class="hero-support-bar">
+          <span class="hero-support-heart">💛</span>
+          <span class="hero-support-text">¿Querés apoyar el contenido? <strong>Cualquier monto ayuda</strong></span>
+          <button class="hero-support-btn" id="btn-donate-hero">Apoyame</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Packs -->
+    <section class="packs-section">
+      <div class="section-label">Seleccioná tu pack</div>
+      <div class="packs-grid" id="packs-grid"></div>
+    </section>
+
+    <!-- Trust Banner after packs -->
+    <section class="trust-banner">
+      <div class="trust-banner-inner">
+        <div class="trust-banner-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <div>
+            <strong>Pago seguro</strong>
+            <span>Mercado Pago y PayPal protegen tu compra</span>
+          </div>
+        </div>
+        <div class="trust-banner-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <div>
+            <strong>Entrega rápida</strong>
+            <span>Recibís el contenido en menos de 24hs</span>
+          </div>
+        </div>
+        <div class="trust-banner-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          <div>
+            <strong>+500 clientes</strong>
+            <span>Personas ya confiaron en nosotros</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="how-section">
+      <div class="section-label">¿Cómo funciona?</div>
+      <div class="steps-grid">
+        <div class="step">
+          <div class="step-icon">🛒</div>
+          <span class="step-n">01</span>
+          <span class="step-t">Elegís el pack que querés</span>
+        </div>
+        <div class="step">
+          <div class="step-icon">💳</div>
+          <span class="step-n">02</span>
+          <span class="step-t">Pagás con MP o PayPal — seguro y rápido</span>
+        </div>
+        <div class="step">
+          <div class="step-icon">📱</div>
+          <span class="step-n">03</span>
+          <span class="step-t">Enviás el comprobante por Telegram</span>
+        </div>
+        <div class="step">
+          <div class="step-icon">🎉</div>
+          <span class="step-n">04</span>
+          <span class="step-t">Recibís tu acceso de forma inmediata</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="testimonials-section">
+      <div class="section-label">Lo que dicen nuestros clientes</div>
+      <div class="testimonials-grid" id="testimonials-grid"></div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section">
+      <div class="section-label">Preguntas frecuentes</div>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>¿Cuándo recibo el contenido?</summary>
+          <p>Generalmente en menos de 30 minutos después de enviar el comprobante por Telegram. Máximo 24 horas.</p>
+        </details>
+        <details class="faq-item">
+          <summary>¿Cómo puedo pagar?</summary>
+          <p>Aceptamos Mercado Pago (transferencia, débito o crédito en Argentina) y PayPal (tarjeta de crédito o débito internacional).</p>
+        </details>
+        <details class="faq-item">
+          <summary>¿Es seguro comprar aquí?</summary>
+          <p>Sí. Los pagos se procesan por Mercado Pago y PayPal, plataformas 100% seguras. Tus datos de pago nunca pasan por nuestro sitio.</p>
+        </details>
+        <details class="faq-item">
+          <summary>¿Qué pasa si no recibo el contenido?</summary>
+          <p>Si enviaste el comprobante y no te llega en 24 horas, contactanos por Telegram y te lo resolvemos al toque.</p>
+        </details>
+        <details class="faq-item">
+          <summary>¿Puedo comprar más de un pack?</summary>
+          <p>Sí, podés comprar todos los packs que quieras.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- Donación -->
+    <section class="donate-section">
+      <div class="donate-inner">
+        <div class="donate-heart">♡</div>
+        <h2 class="donate-title">Apoyá el contenido</h2>
+        <p class="donate-sub">Si disfrutás de lo que hago y querés que siga creando,<br/>cualquier apoyo se agradece un montón 💛</p>
+        <div class="donate-amounts" id="donate-amounts">
+          <button class="donate-chip" data-ars="2000" data-usd="2">$2.000 ARS</button>
+          <button class="donate-chip" data-ars="5000" data-usd="5">$5.000 ARS</button>
+          <button class="donate-chip" data-ars="10000" data-usd="10">$10.000 ARS</button>
+          <button class="donate-chip donate-chip--custom" id="donate-custom-btn">Otro monto ✏️</button>
+        </div>
+        <div class="donate-custom-wrap hidden" id="donate-custom-wrap">
+          <input id="donate-custom-input" class="donate-input" type="number" placeholder="Ingresá el monto en ARS" min="1" />
+          <button class="btn btn-ghost donate-confirm-btn" id="donate-custom-confirm">Confirmar</button>
+        </div>
+        <button class="btn btn-donate" id="btn-donate">💛 Enviar apoyo</button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-inner">
+        <span class="logo logo-sm">Drops</span>
+        <p>Contenido exclusivo para mayores de 18 años 🔞</p>
+        <div class="footer-trust">
+          <span class="footer-trust-item">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Pago seguro
+          </span>
+          <span class="footer-trust-item">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            Datos protegidos
+          </span>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer-dev">
+          <p class="footer-dev-text">
+            Sitio desarrollado a medida por el equipo de
+            <strong>Drops</strong> &mdash;
+            <a href="mailto:dropsdrops2005@gmail.com" class="footer-email">dropsdrops2005@gmail.com</a>
+          </p>
+          <p class="footer-dev-sub">💻 ¿Querés una página similar para tu contenido? Contactános.</p>
+        </div>
+      </div>
+    </footer>
+
+  </div><!-- /site -->
+
+  <!-- Botón flotante de apoyo (siempre visible) -->
+  <button class="fab-donate" id="btn-donate-fab" aria-label="Apoyar el contenido">
+    <span class="fab-heart">💛</span>
+    <span class="fab-label">Apoyame</span>
+  </button>
+
+  <!-- ═══════════ MODAL: MÉTODO DE PAGO ═══════════ -->
+  <div id="modal-payment" class="modal hidden" role="dialog">
+    <div class="modal-overlay" id="overlay-payment"></div>
+    <div class="modal-card">
+      <button class="modal-close" id="close-payment">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div class="modal-pack-tag" id="modal-pack-tag"></div>
+      <h2 class="modal-title">¿Cómo querés pagar?</h2>
+      <p class="modal-sub">Elegí el método que más te convenga</p>
+      <div class="pay-options">
+        <button class="pay-opt" id="pay-mp">
+          <div class="pay-opt-left">
+            <span class="pay-icon">🇦🇷</span>
+            <div>
+              <div class="pay-name">Mercado Pago</div>
+              <div class="pay-sub">Transferencia, débito o crédito — Argentina</div>
+            </div>
+          </div>
+          <div class="pay-price" id="price-mp"></div>
+        </button>
+        <button class="pay-opt" id="pay-paypal">
+          <div class="pay-opt-left">
+            <span class="pay-icon">🌐</span>
+            <div>
+              <div class="pay-name">PayPal</div>
+              <div class="pay-sub">Tarjeta de crédito o débito — Internacional</div>
+            </div>
+          </div>
+          <div class="pay-price" id="price-paypal"></div>
+        </button>
+      </div>
+      <div class="modal-security">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        Tu pago es procesado de forma segura por la plataforma elegida
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════ MODAL: POST-PAGO (INSTRUCCIONES) ═══════════ -->
+  <div id="modal-mp" class="modal hidden" role="dialog">
+    <div class="modal-overlay" id="overlay-mp"></div>
+    <div class="modal-card">
+      <button class="modal-close" id="close-mp">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div class="modal-pack-tag" id="mp-pack-tag"></div>
+      <h2 class="modal-title">¡Ya casi terminás!</h2>
+      <p class="modal-sub">Completá el pago en la página de <strong id="mp-method-label"></strong> que se abrió.<br/>Después envianos el comprobante por Telegram.</p>
+      <div class="data-box" style="margin-bottom:1.2rem">
+        <div class="data-label">Importe a pagar</div>
+        <div class="data-value" id="mp-amount-val"></div>
+      </div>
+      <div class="modal-steps">
+        <div class="modal-step">
+          <span class="modal-step-num">1</span>
+          <span>Completá el pago en la pestaña que se abrió</span>
+        </div>
+        <div class="modal-step">
+          <span class="modal-step-num">2</span>
+          <span>Hacé captura del comprobante</span>
+        </div>
+        <div class="modal-step">
+          <span class="modal-step-num">3</span>
+          <span>Enviálo por Telegram indicando el pack</span>
+        </div>
+      </div>
+      <a id="mp-tg-btn" href="#" target="_blank" class="btn btn-primary tg-confirm-btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248-2.008 9.456c-.15.668-.543.832-1.1.518l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L7.48 14.617l-2.95-.92c-.64-.2-.654-.64.136-.948l11.527-4.444c.535-.194 1.003.13.369 1.943z"/></svg>
+        Enviar comprobante por Telegram
+      </a>
+    </div>
+  </div>
+
+  <!-- ═══════════ MODAL: DONACIÓN ═══════════ -->
+  <div id="modal-donate" class="modal hidden" role="dialog">
+    <div class="modal-overlay" id="overlay-donate"></div>
+    <div class="modal-card">
+      <button class="modal-close" id="close-donate">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div class="modal-pack-tag">💛 Apoyo</div>
+      <h2 class="modal-title">¡Gracias por apoyar!</h2>
+      <p class="modal-sub">Monto seleccionado: <strong id="donate-amount-display"></strong></p>
+
+      <!-- PayPal -->
+      <div class="donate-method-label">PayPal — Rápido y seguro</div>
+      <a id="donate-paypal-link" href="#" target="_blank" rel="noopener" class="btn donate-paypal-btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944 2.1A.765.765 0 0 1 5.704 1.5h5.363c2.034 0 3.455.495 4.18 1.478.693.933.936 2.162.718 3.738l-.018.112v.093c-.534 3.298-2.053 5.468-4.49 6.478l-.073.031a.832.832 0 0 1-.346.082H8.56a.77.77 0 0 0-.763.654l-.68 4.304a.641.641 0 0 1-.633.54h-2.4z"/></svg>
+        Pagar con PayPal
+      </a>
+
+      <!-- Mercado Pago -->
+      <div class="donate-method-label" style="margin-top:1rem">Mercado Pago — Argentina</div>
+      <a id="donate-mp-link" href="#" target="_blank" rel="noopener" class="btn donate-mp-btn">
+        💳 Pagar con Mercado Pago
+      </a>
+
+      <div class="modal-info">📌 Mencioná "apoyo" al enviar el comprobante por Telegram</div>
+      <a id="donate-tg-btn" href="#" target="_blank" class="btn btn-primary tg-confirm-btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248-2.008 9.456c-.15.668-.543.832-1.1.518l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L7.48 14.617l-2.95-.92c-.64-.2-.654-.64.136-.948l11.527-4.444c.535-.194 1.003.13.369 1.943z"/></svg>
+        Avisar por Telegram
+      </a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
