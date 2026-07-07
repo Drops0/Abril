@@ -22,6 +22,7 @@ const CONFIG = {
       descripcion: 'Fotos exclusivas sin filtros',
       contenido: '12 fotos por pack',
       disponibles: 3,
+      vendidos: 47,
       precio_ars: '$12.000 ARS',
       precio_usd: '$9 USD',
       preview: 'img/preview_premium.jpg',
@@ -34,6 +35,7 @@ const CONFIG = {
       descripcion: 'Poses sensuales con ropa',
       contenido: 'Múltiples fotos por pack',
       disponibles: 2,
+      vendidos: 35,
       precio_ars: '$6.000 ARS',
       precio_usd: '$5 USD',
       preview: 'img/preview_comun.jpg',
@@ -46,6 +48,7 @@ const CONFIG = {
       descripcion: 'Contenido exclusivo en video',
       contenido: '1 video por pack',
       disponibles: 4,
+      vendidos: 29,
       precio_ars: '$12.000 ARS',
       precio_usd: '$9 USD',
       preview: 'img/preview_videos.jpg',
@@ -58,6 +61,7 @@ const CONFIG = {
       descripcion: 'Fotografía artística',
       contenido: '10 fotos por pack',
       disponibles: 3,
+      vendidos: 22,
       precio_ars: '$4.000 ARS',
       precio_usd: '$3 USD',
       preview: 'img/preview_pies.jpg',
@@ -70,6 +74,7 @@ const CONFIG = {
       descripcion: 'Fotos exclusivas en bikini y ropa interior',
       contenido: 'Fotos en bikini y lencería',
       disponibles: 3,
+      vendidos: 18,
       precio_ars: '$8.000 ARS',
       precio_usd: '$6 USD',
       preview: 'img/preview_bikini.jpg',
@@ -82,6 +87,7 @@ const CONFIG = {
       descripcion: 'Charla hot por video de 10 minutos',
       contenido: '1 videollamada de 10 min',
       disponibles: 3,
+      vendidos: 41,
       precio_ars: '$2.000 ARS',
       precio_usd: '$2 USD',
       preview: 'img/preview_sexting.jpg',
@@ -94,6 +100,7 @@ const CONFIG = {
       descripcion: 'Audios personalizados diciendo lo que quieras',
       contenido: '2 minutos de audios custom',
       disponibles: 3,
+      vendidos: 33,
       precio_ars: '$3.500 ARS',
       precio_usd: '$3 USD',
       preview: 'img/preview_audios.jpg',
@@ -106,6 +113,7 @@ const CONFIG = {
       descripcion: 'Un mes de atención personalizada + todo el contenido',
       contenido: 'Todo incluido por 1 mes',
       disponibles: 2,
+      vendidos: 8,
       precio_ars: '$450.000 ARS',
       precio_usd: '$300 USD',
       preview: 'img/preview_novia.jpg',
@@ -171,6 +179,7 @@ CONFIG.packs.forEach(pack => {
     <div class="pack-preview">
       <img src="${pack.preview}" alt="Preview ${pack.nombre}" loading="lazy" />
       <div class="pack-preview-overlay"></div>
+      ${pack.vendidos ? `<div class="pack-sold-badge">🔥 ${pack.vendidos} vendidos</div>` : ''}
     </div>
     <div class="pack-body">
       <div class="pack-avail">${pack.disponibles} packs para elegir</div>
